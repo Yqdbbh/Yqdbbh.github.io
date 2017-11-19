@@ -1,0 +1,22 @@
+数据库版本   10.2.9-MariaDB MariaDB Server
+
+
+安装
+   sudo yum install mariadb*
+   启动服务
+   systemctl start mariadb.service
+   停止服务
+   systemctl stop mariadb.service
+   
+改编码格式
+  查看字符编码
+    show variables like "%character%"
+  更改编码为utf-8 格式
+    /etc/my.cof.d 目录下
+    client.cnf 文件
+      [client]
+      default-character-set=utf8
+      mariadb-server.cnf 文件
+    [mysqld]
+     character-set-server=utf8
+  
