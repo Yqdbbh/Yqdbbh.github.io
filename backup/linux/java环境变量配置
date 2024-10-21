@@ -1,7 +1,0 @@
-用的 fedora 27  只下的jre
-  解压官方下载的压缩包
-   放到/opt目录下
-    export  JAVA_HOME=/opt/jre1.8.0_144
-    export  CLASSPATH=$JAVA_HOME/bin
-    export  PATH=$CLASSPATH:$JAVA_HOME/lib
-    export PATH=$JAVA_HOME/bin:$PATH:$HOME/bin
